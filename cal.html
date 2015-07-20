@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link type='text/css' rel='stylesheet' href='style.css' />
+	<link href='http://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>  
+	<script src="cal.js"></script>
+</head>
+
+<body onkeydown="myFunction(event)">
+	<div id="wholeBody">
+	<h1> Simple Calculator</h1>
+	<h5>Support input from both mouse and keyboard</h5>
+	<div id="cal">
+		<div id="screen">
+			<div id="equation"></div>
+			<div id="anwser"></div>
+		</div>
+		
+
+		
+		<div id="numWrapper" >
+			<div id="7" class="numpad" onclick="num7()">7</div>
+			<div id="8" class="numpad" onclick="num8()">8</div>
+			<div id="9" class="numpad" onclick="num9()">9</div>
+			<div id="4" class="numpad" onclick="num4()">4</div>
+			<div id="5" class="numpad" onclick="num5()">5</div>
+			<div id="6" class="numpad" onclick="num6()">6</div>
+			<div id="1" class="numpad" onclick="num1()">1</div>
+			<div id="2" class="numpad" onclick="num2()">2</div>
+			<div id="3" class="numpad" onclick="num3()">3</div>
+			<div id="0" class="numpad" onclick="num0()">0</div>
+			<div id="00" class="numpad" onclick="num00()">00</div>
+			<div id="dot" class="numpad" onclick="numdot()">.</div>
+		</div>
+		
+		<div id="side1">
+			<div id="add" class="numpad" onclick="plus()">+</div>
+			<div id="sub" class="numpad" onclick="minus()">-</div>
+			<div id="mul" class="numpad" onclick="times()">*</div>
+			<div id="divide" class="numpad" onclick="divide()">/</div>
+		</div>
+
+		<div id="side2">
+			<div id="back" class="numpad" onclick="backward()">&#8592;</div>
+			<div id="clear" class="numpad" onclick="clearCurrent()">C</div>
+			<div id="clearall" class="numpad" onclick="clickedClearAll()">CE</div>		
+		
+			<div id="equal" class="numpad" onclick="equal()">=</div>
+		</div>
+	</div>
+	
+	<div id="more">
+		<dl>
+		<dt> Change theme:</dt>
+			<dd onclick="purple()">Purple</dd>
+			<dd onclick="grey()">Grey</dd>
+			<dd onclick="blue()">Blue</dd>
+			<dd onclick="pink()">Pink</dd>
+			<dd onclick="orange()">Orange</dd>
+		</dl>
+	</div>
+	
+	<div id="footer">
+		<p> &#169; 2015 Queenie Wong </p>
+	</div>
+	</div>
+	
+</body>
+</html>
